@@ -101,7 +101,7 @@ To test the API, use Postman or any other API testing tool to make requests to t
 ## Frontend Setup
 
 ### 1. **Install Dependencies**
-Navigate to the `frontend/` folder and install the required dependencies:
+Navigate to the `FrontAngular/` folder and install the required dependencies:
 
 ```bash
 cd frontend
@@ -109,7 +109,7 @@ npm install
 ```
 
 ### 2. **Run the Frontend**
-To start the Angular application, run the following command inside the `frontend/` folder:
+To start the Angular application, run the following command inside the `FrontAngular/` folder:
 
 ```bash
 ng serve
