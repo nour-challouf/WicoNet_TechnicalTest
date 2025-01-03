@@ -104,7 +104,7 @@ To test the API, use Postman or any other API testing tool to make requests to t
 Navigate to the `FrontAngular/` folder and install the required dependencies:
 
 ```bash
-cd frontend
+cd FrontAngular
 npm install
 ```
 
