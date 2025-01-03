@@ -34,7 +34,7 @@ This project is designed to manage products using a full-stack application that 
 │   ├── server.js                 # Main server file to run Express server
 │   ├── .env                      # Environment variables (e.g., MongoDB URI)
 │   └── package.json              # Node.js dependencies and scripts
-├── frontend/
+├── FrontAngular/
 │   ├── src/
 │   │   ├── app/
 │   │   │   ├── services/
@@ -43,7 +43,7 @@ This project is designed to manage products using a full-stack application that 
 │   │   │   │   ├── product-list/
 │   │   │   │   ├── product-details/
 │   │   │   │   ├── add-product/
-│   │   │   │   └── edit-product/
+│   │   │   │   └── update-product/
 │   │   └── app.module.ts         # Main Angular module
 │   └── angular.json
 └── README.md
