@@ -1,0 +1,91 @@
+
+Test Report for API and Frontend
+
+1. Backend Testing (API Routes using Postman)
+
+Routes Tested:
+
+1.1 GET /api/products 
+- Description: Fetch the list of all products.
+- Expected Outcome: Returns a JSON array of products with attributes: id, name, price, category.
+- Test Result: Passed, status code 200, correct data returned.
+
+1.2 GET /api/products/:id
+- Description: Fetch a specific product by its ID.
+- Expected Outcome: Returns a JSON object for the requested product.
+- Test Result: Passed, status code 200, correct product details returned.
+
+1.3 POST /api/products
+- Description: Add a new product.
+- Test Data:
+    {
+        "name": "Product1",
+        "price": 100,
+        "category": "Category1"
+    }
+- Expected Outcome: Returns the created product with a status code 201.
+- Test Result: Passed, product added successfully, returned correct status code.
+
+1.4 PUT /api/products/:id
+- Description: Update an existing product.
+- Test Data:
+    {
+        "name": "Updated Product1",
+        "price": 120,
+        "category": "Category1"
+    }
+- Expected Outcome: Returns the updated product with a status code 200.
+- Test Result: Passed, product updated successfully, returned correct status code.
+
+1.5 DELETE /api/products/:id
+- Description: Delete a product by ID.
+- Expected Outcome: Returns a success message with status code 200.
+- Test Result: Passed, product deleted successfully.
+
+Backend Error Handling Tests:
+
+1.6 GET /api/products/:id with invalid ID
+- Expected Outcome: Returns a 404 status code with a Product not found message.
+- Test Result: Passed, error message returned as expected.
+
+1.7 POST /api/products with missing required fields
+- Expected Outcome: Returns a 400 status code with a message indicating missing fields.
+- Test Result: Passed, error message returned correctly.
+
+2. Frontend Testing (Angular UI)
+
+Test Cases:
+
+2.1 Product List Page (/products)
+- Expected Outcome: Displays a list of products in a table.
+- Test Result: Passed, products displayed correctly.
+
+2.2 Product Details Page (/products/:id)
+- Expected Outcome: Displays the details of a specific product based on the provided ID.
+- Test Result: Passed, product details shown correctly.
+
+2.3 Add Product Page (/products/add)
+- Expected Outcome: Form to add a new product with fields for name, price, and category.
+- Test Result: Passed, form displayed correctly and product added successfully.
+
+2.4 Edit Product Page (/products/edit/:id)
+- Expected Outcome: Form to edit an existing product with pre-filled values.
+- Test Result: Passed, form pre-filled correctly with product data and update functionality works.
+
+2.5 Error Handling
+- Expected Outcome: Error messages displayed for failed API calls or missing form fields.
+- Test Result: Passed, appropriate error messages shown in case of failures.
+
+3. Validation
+
+3.1 End-to-End Functionality
+- Expected Outcome: The application works seamlessly with both frontend and backend communicating properly.
+- Test Result: Passed, all features work end-to-end.
+
+3.2 Error Handling
+- Expected Outcome: Proper error messages should be displayed when API requests fail or invalid data is provided.
+- Test Result: Passed, error handling is working correctly.
+
+3.3 Robustness
+- Expected Outcome: Application should handle edge cases and failures gracefully.
+- Test Result: Passed, all edge cases handled properly.
